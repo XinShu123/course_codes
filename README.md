@@ -1,2 +1,2 @@
-# course_codes
-collects codes that I wrote for courses
+# OS
+collects codes that I wrote for Operating system course
