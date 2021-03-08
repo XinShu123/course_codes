@@ -1,2 +1,2 @@
-# course_codes
-collects codes that I wrote for courses
+# assembler
+collects codes that I wrote for CSC3050: computer architecture: an assembler
