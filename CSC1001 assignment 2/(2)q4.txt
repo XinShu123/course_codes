@@ -1,0 +1,7 @@
+so I first define a function isAnagram(s1,s2) to check whether two strings
+are anagram or not.I create one list for each string and use for loop to
+divide the string and append the character into lists.Then I sort the lists
+and if the sorted lists are the same,we can say that two words are anagram.
+Otherwise,it isn't.
+Then I define the main() to prompt the user to enter two words and use isAnagram(s1,s2)
+as the conditional statement to return is an anagram or not.

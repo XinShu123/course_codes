@@ -1,0 +1,7 @@
+There are three kinds of invalid input.Because N is row number, it can not be
+a float number,a negative number or a string.So first we use try-except structure
+to avoid inputting string error. Then in try block we use if-elif-elif structure
+ to seperately identify and correct inputting float number and negative number.
+
+As for execution part:In if block, we can use while loop to display N rows of numbers. Also, we can
+use %-8d%-8d%-8d'%(m,m+1,m**(m+1)) structure to display the number in a neat way.

@@ -1,0 +1,9 @@
+There are some possible errors:Users may input strings as lower and upper limit;
+the lower limit may be larger than upper limit;the number of subintervals must
+be an integer rather than a float number; the number of subintervals must be
+no smaller than 1.So in my program I tried to identify and correct these inputting
+errors.
+
+As for excecution,I first import function from math,then
+convert user input into function name,in the end use while loop to iterately sum up
+the integration.

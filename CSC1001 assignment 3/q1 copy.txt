@@ -1,0 +1,13 @@
+First create a Singly Linked List class and create a Node class.
+Then definde a count() function using recursion to count the number of nodes
+in certain SLL.This function takes head of SLL as the input.The base case is
+when tail.pointer is None,then return 0,and every time head.pointer is
+implemented the number will increment by 1.
+Then create a SLL.Put all the elements in a list in the head of SLL,then use
+insert_head,insert__tail,delete_head meathod to modify the SLL.
+At last,define a main() function.First,use while True,try-except to examine
+the wrong input and promt user to enter again.Let n equal to the reference
+to head of SLL,which is lis.head,if user's input is right,print the number
+of nodes in SLL,then break the loop,if user's input is wrong,prompt user to
+enter again.The last while loop is to print the element of all nodes in SLL
+in turn.
