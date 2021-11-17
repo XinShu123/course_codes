@@ -1,2 +1,2 @@
-# course_codes
-collects codes that I wrote for courses
+#CSC4005
+Parallel Computing
