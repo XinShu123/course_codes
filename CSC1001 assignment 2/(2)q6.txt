@@ -1,0 +1,29 @@
+first,I want to clarify that I am using arr[row] = column to represent the
+number list I will generate to display the picture.so first I define a
+verify(arr,checkRow) for verifying whether a certain column in checkRow
+is in conflict with previous Queens' positions.Because I check it by row,so
+there is no possibility that two queens are in the same row,so I only need to
+check if they are in the same column and same right and left diagonal.for one
+checkRow,I just need to check the previous row with it one by one,so I use three
+for loops to iterate through the previous row and check the three conditions.
+if any of condition is satisfied,return False. and if a certain column in
+checkRow do not satisfy three conditions,which means it can jump out of the three
+for loops and we can say that this certain column in checkRow is valid and return
+True.
+Then I define a solve() to generate the result using verify(arr,checkRow).To
+match the index of the arr with the row number, I add a 0 into the start of
+the arr. I initialize rowOne = rowTwo = rowThree = rowFour = rowFive = rowSix
+= rowSeven = rowEight = 1,which means that they start from the first column to
+check.Then I use eight for loops for each row to check each column.in each for
+loop,I use range(1,9),which represents 8 columns, and use verify(arr,checkRow)
+to check if the column is valid or not,if it is invalid,the loop stop this column's
+loop and continue to check next column in the same row,if it is valid,it will
+jump into the next row's for loop and continue the process before.At eighth
+loop,if it is valid, we can finally stop the loop and return the result number
+list.
+Then I define display() to convert the numberlist returned by solve() to the picture.
+Set a variable rowLis represent the list returned by solve().Then for eight rows,
+each row has eight columns,for each column in each row,if it equals to rowLis[row],
+print('|Q| ',end = ''),if it doesn't equal to, then print('| ',end = ''), and
+for each row we need to change a line,so print().
+And finally, call the display function and the result is printed.

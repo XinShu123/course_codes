@@ -1,0 +1,26 @@
+first,I define the getdigit(number) to get the sum of digits is a number is
+larger than or equal to 10.so we can just use divmod() to get the digits.
+if the number is larger than or equal to 10,then we will add its digits and
+return the result.if it isn't,we just return the number.
+second, I define the sumOfDoubleEvenPlace(number) to calculate the sumup of
+the even place numbers.I transfer the number into a string, and create a variable
+index to control the while loop(and initilize it be len(number)-2 because it
+is the index of the last even place digit.) and initialize sumup be 0. and use
+a while loop to iterate through the whole number and check if the double
+digit is larger than 10.if it is, use sumOfDoubleEvenPlace(number) to calculate
+the result,else,just double itself and all results of two cases will be added
+to the sumup. and At last,return sumup.
+Third,I need to define the sumOfOddPlace(number),similar to sumOfDoubleEvenPlace(number)
+,I transfer the number into a string, and create a variable index to control the while loop(and initilize it be len(number)-1 because it
+is the index of the last odd place digit.) and initialize sumup be 0.and just
+add all the odd place digits altogether.
+and Finally,I need to define isValid(),in which I prompts the user to enter
+their credit card number as an integer and then transfer it into a string and
+check if it is starting with 4 or 5 or 6 or 37 and their number of digits is
+between 13 and 16,if it satisfies, then I transfer it into an integer and check
+if sumOfDoubleEvenPlace(number)+sumOfOddPlace(number)) % 10 == 0,if it satisfies,
+then we can say it is valid,otherwise(if any of the previously listing condition
+is not satisfied),return invalid.
+
+
+                                

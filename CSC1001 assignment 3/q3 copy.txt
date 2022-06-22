@@ -1,0 +1,37 @@
+first,create a ListStack class.
+if we can not use the recursive function,we can use stack to
+store our input value and use a while loop to replace and act lke a recursive function.
+first,initialize a variable count to count the number of steps.
+Then define HanoiTower() function and let the number of disks as the input.
+In the function,first global the count variable.Then create a ListStack object
+to store the input value.So you see the largest disk and
+the smaller n-1 disks as two objects.
+So the process is you first place the n-1 disks from A to B,then
+place the largest disk from A to C,then place the n-1 disks from B to C.
+so if we define a recursive function,like move(n,a,b,c),which means that
+move n disks from a to c via b.It's like:
+def move(n,a,b,c):
+    if n==1:
+        print(a,'->',c)
+    else:
+        move(n-1,a,c,b)
+        move(1,a,b,c)
+        move(n-1,b,a,c)
+the base case is when n == 1:
+    just move disk from a to c
+    else:
+        move n-1 disks from a to b
+        move the largest disk from a to c
+        move n-1 disks from b to c
+but now we are using stack.So I create a stack object to store the [number of disks
+,place of departure,place of via,place of destination].while stack is not empty,
+I pop out the input list and if current list's n is smaller than 1,the function
+just will do nothing,if n==1,it is the base case,just move from place of departure
+to place of destination,and count increment by 1.if n>=2,place the n-1 disks from
+ place of departure to place of via,then
+place the largest disk from place of departure to place of destination
+,then place the n-1 disks from place of via to place of destination.
+But because the stack is FIFO,so we need to reverse the order of pushing
+[number of disks,place of departure,place of via,place of destination] in.
+At last you just prompt the user to enter number of disks and call the
+nonrecursive HanoiTower() and print out the least steps.
