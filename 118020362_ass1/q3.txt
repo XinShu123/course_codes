@@ -1,0 +1,4 @@
+because we are to find the smallest n whose squre is larger than m,
+so we can use while loop to let n grow larger when m>=n**2.
+That is, until m < n**,n is stopping growing.Thus, we can find the smallest n
+whose squre is larger than m.

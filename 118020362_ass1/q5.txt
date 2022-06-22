@@ -1,0 +1,12 @@
+Actually there are three types of invalid input.Of course users can not input
+string,and prime numbers are no smaller than 2,so inputting number must be larger
+than 2 and also inputting number should be an integer rather than a float number.
+We can use try-except structure to identify and correct string error.In try
+block, we use if statement to verify if input is larger than 2.However,I can not handle
+it when user input a float number, because we are bound to use for loop,while range()
+can not accept float number.
+
+Then, we need to use a block to output the prime numbers.Since 2 is difficult to
+handle, I refer to it seperately.Also,to print at most 8 numbers a line,I need
+to count the ouputing prime numbers.When the count can be mode by 8,I need to
+change a line.

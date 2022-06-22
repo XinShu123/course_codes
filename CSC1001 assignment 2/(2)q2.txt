@@ -1,0 +1,31 @@
+first,we need a reverse(number) function.Use reminder and mode to get the digit and and
+use a list to store the digits, then use an empty string for digits to fill in.
+At last,return the integer form of the string.
+Then,we can use reverse(number) to define isNotPalindrome(number)
+to check whether a number isn't a palindrome.Just when a number is not
+equals to the reverse of it can we say that the number is not a palindrome.
+Third,we need to define isPrime(number) function to check whether a number is a prime
+number or not.so first set the divisor equals to 2,then if the number can be
+divided by 2,we can say that it's not a prime.if the number cannot be divided
+by 2, then we add the divisor by 1,then repeat the process as before.Until
+the divisor is larger than the squre root of the number can we finish
+the check process,which means that a number can not be divided by any number
+which is no larger than the square root of it.Then it can jump out of the while
+loop and we can say that it is a prime number(so we return True).
+Fourth, we need to define the reversalIsPrime(number) function to check
+whether the reverse of a number is a prime or not.we can just use reverse(number)
+ and isPrime(number) to define.
+Finally,we need to define a main() function to integrate all the pre-defined
+functions and print the first 100 emirp numbers.to print the first 100 emirp
+numbers,we need the count variable to count the number of prime numbers and
+an n variable to represent the prime numbers.we
+initialize the count = 0,and use a while loop,let count<=99 as the checking
+condition.
+we know that the smallest prime
+number is 2,so we first set n = 2,then checkt the condition for being a emirp
+number using pre-defined functions.if it is ,we need to print the number and
+then the number needs to be incremented by 1 to continue the next-time loop,
+and also the count needs to be incremented by 1.during this, if the count can
+be divided by 10,we need to change the line for the purpose of putting
+10 numbers each line.if the number isn't an emirp number,we just need to add the
+number by 1 and coutinue to check.

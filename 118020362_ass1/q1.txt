@@ -1,0 +1,1 @@
+just to convert users' input into numbers and calculte and to output the result.

@@ -1,0 +1,13 @@
+to estimate,I define a sqrt() function,n as the parameter to roughly calculate
+the square root of a number.First,set lastGuess equals to one.Then Use a while loop
+to iterally estimate the square root.In while loop,first calculate the nextGuess,
+then check if the absolute difference is smaller than a very small number 0.0001,
+if it is,we can say that roughly the nextGuess is the square root of the number,
+so I use return to stop the while loop and output the nextGuess;if it is not, I
+let lastGuess equals to prior nextGuess and continue the while loop,until the
+absolute difference between lastGuess and nextGuess is smaller than 0.0001.
+
+Then I define a main() to print the result.First,initialize an n as the input number
+in sqrt(n), and I use a try-except structure to avoid input type error.In try
+block I invoke the sqrt() function and output the result.In except block, I print
+Invalid input to alert the user to enter a number.

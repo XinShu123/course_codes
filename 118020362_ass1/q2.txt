@@ -1,0 +1,1 @@
+just use for loop to display the digit in the input number one by one.

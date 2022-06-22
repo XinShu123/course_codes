@@ -1,0 +1,20 @@
+I first define a function Student(lis,n) for return the result of a student's
+activity given the state of every locker in the lis.Because we can see there
+is a rule that the n th student will start from the n th locker and change
+every n th locker's state.So I initialize a variable index as -1 and
+create a list to record the need-change index.Use a while loop to iterate
+through all the index. and then use a for loop to change the state of recording
+index of the given lis.At last,return the after-change list after a student's
+come.
+second,I define a main() to implement Student(lis,n) one by one for 100 times,
+which means I need to implement it on the result of the previous implementation of
+it.I set the student number to be 100, and initialize a variable a as 1(a is
+used to determine the student number implemented.).and create a list with 100
+True,which is the initial state of lockers.use a while loop to implement the
+Student(lis,n) for 100 times.After all these,print the result lis, and calculate
+the number of open lockers using count variable.
+ps:if you want the result after any student's coming,just in main() to transfer
+n = 100 into n = eval(input('enter the student number:')) can make it.
+                                                                        
+
+                                                                        

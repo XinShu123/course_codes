@@ -1,0 +1,24 @@
+First,create a Node class and a LinkedQueue class.
+Then, define myQuickSort() function.enter a SLL' head as the input.First,for
+the simplest case and also the base case,if a SLL is empty or it only has one
+element,we can directly return None or the element of the only node.else, we
+will set the element of the first node as the pivot value.Then we will compare
+element of each node in the SLL with the pivot value.Because we are using SLL,
+we only have one direction.So,we will let the node whose element is smaller
+than pivot become the left first node,if is larger than pivot,there is no change.
+After that,we will get a SLL with the nodes whose elements are smaller than
+pivot all in left,head in the middle,nodes whose elements are larger than pivot
+in the right.Then,we use leftHeadNumber variable to find the first node after
+the head,and set it as the rightHead,so we figure out the right side of this SLL.
+Then use leftHeadNumber variable to find the last node before head and set it as
+leftTail,so we figure out the left side of this SLL.Then we cut this SLL into
+three parts:left side,head,right side.And we do the same thing upon left side and
+right side,until the base case.Then we combine all the results which is to let
+leftTail.pointer = head,head.pointer = myQuickSort(rightHead),and after that
+all is done.
+Then define the main().use while True and try-except block to handle the wrong
+input and prompt the user to enter again.In try block,prompt user to enter a
+reference to the head of the SLL.Then implement the myQuickSort() function.
+Then create a LinkedQueue.enqueue numbers in it and call the main(),which
+will print the reference to the sorted LQ's head,and if you want to have a look
+at the sorted LQ,just use print(LQ).
